@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import Container from "react-bootstrap/esm/Container";
+import {Container, Row, Col} from'react-bootstrap';
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/images/header-img.svg";
 
@@ -13,7 +13,7 @@ export const Banner = () => {
 
     useEffect(() => {
         let ticker = setInterval(() => {
-            ticker();
+            tick();
         }, delta);
 
         return () => {
@@ -51,7 +51,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my poorfolio</span>
-                        <h1>Hi, I'm Dylan<span className="wrap">[text]</span></h1>
+                        <h1>Hi, I'm Dylan <span className="wrap">{text}</span></h1>
                         <p>About me Section</p>
                         <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
