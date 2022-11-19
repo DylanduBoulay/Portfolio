@@ -50,13 +50,13 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my poorfolio</span>
+                        <span className="tagline">Welcome to my portfolio</span>
                         <h1>Hi, I'm Dylan <span className="wrap">{text}</span></h1>
-                        <p>About me Section</p>
+                        <p>I am a graduate of Murdoch University, majoring in Games Software Design and Sound. </p>
                         <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="header image"></img>
+                        <img src={headerImg} alt="headerimg"></img>
                     </Col>
                 </Row>
             </Container>
