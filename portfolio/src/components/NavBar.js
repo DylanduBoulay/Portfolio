@@ -2,10 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect} from "react";
-import logo from '../assets/images/logo.svg';
+// import logo from '../assets/images/logo.svg';
 import navIcon1 from '../assets/images/nav-Icon1.svg';
 import navIcon2 from '../assets/images/nav-Icon2.svg';
-import navIcon3 from '../assets/images/nav-Icon3.svg';
+// import navIcon3 from '../assets/images/nav-Icon3.svg'; add an SVG image for the third icon for I dunno Facebook or something.
+// import { HashLink } from 'react-router-hash-link';
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -21,6 +23,7 @@ export const NavBar = () => {
             }
         }
         window.addEventListener("scroll", onScroll);
+
         return () => {
             window.removeEventListener("scroll", onScroll);
         }
@@ -52,10 +55,12 @@ export const NavBar = () => {
             <div className="social-icon">
                 <a href="https://au.linkedin.com/in/dylan-du-boulay-193828196"><img src={navIcon1} alt=""/></a>
                 <a href="https://github.com/DylanduBoulay"><img src={navIcon2} alt=""/></a>
-                <a href="#"><img src={navIcon3} alt=""/></a>
+                {/* <a href="#"><img src={navIcon3} alt=""/></a> */}
 
             </div>
-            <button className="btn" ><span>Let's Connect</span> </button>
+            <Nav.Link id="contactBtn" href="#contact" className={activeLink === 'contact' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><span>Let's Connect</span> </Nav.Link> 
+            {/* <button className="btn" ><span>Let's Connect</span> </button> */}
+
         </span>
 
         </Navbar.Collapse>

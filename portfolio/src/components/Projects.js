@@ -8,11 +8,13 @@ export const Projects = () => {
     
     const projects = [
     {
+        index: 0,
         title: "Swag",
         description: "The big swag",
         image: img1,
     },
     {
+        index: 1,
         title: "Swag 2",
         description: "very swag yes",
         image: img2,
@@ -49,10 +51,11 @@ export const Projects = () => {
                         <Tab.Pane eventKey="first">
                             <Row>
                             {
-                                projects.map((project, index) => {
+                                projects.map((project) => {
                                     return (
                                         <ProjectCard
-                                            key={index}
+                                            key={projects.index}
+                                            {...project}
 
                                         ></ProjectCard>
                                     )
@@ -63,10 +66,11 @@ export const Projects = () => {
                         <Tab.Pane eventKey="second">TEST 2
                             <Row>
                                 {
-                                projects.map((project, index) => {
+                                projects.map((project) => {
                                     return (
                                         <ProjectCard
-                                            key={index}
+                                            key={projects.index}
+                                            {...project}
 
                                         ></ProjectCard>
                                     )

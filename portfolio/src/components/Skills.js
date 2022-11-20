@@ -15,7 +15,7 @@ import skill11 from "../assets/images/wwise.svg";
 import skill12 from "../assets/images/fmod.svg";
 import skill13 from "../assets/images/metaquest2.svg";
 import skill14 from "../assets/images/maya.svg";
-import colorSharp from "../assets/images/colorSharp.jpg";
+
 
 export const Skills = () => {
 
@@ -125,7 +125,6 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="background"></img>
             </section>
 
     )
