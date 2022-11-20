@@ -218,13 +218,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1{
-  font-size: 65px;
+  font-size: 2.5em;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 1em;
   margin-bottom: 20px;
   display: block;
+  min-height: 65px;
 }
+
+
 
 .banner p{
   color: #fff;
@@ -242,6 +245,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  border: none;
 }
 
 .banner button svg{
@@ -318,8 +323,6 @@ txt-rotate > .wrap{
 }
 
 
-
-
 .background-image-left{
   top: 28%;
   position: absolute;
@@ -327,6 +330,11 @@ txt-rotate > .wrap{
   width: 40%;
   z-index: -4;
 }
+
+
+
+
+
 
 /* General CSS */
 .App {

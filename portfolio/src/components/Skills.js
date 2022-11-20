@@ -9,6 +9,12 @@ import skill5 from "../assets/images/css.svg";
 import skill6 from "../assets/images/js.svg";
 import skill7 from "../assets/images/php.svg";
 import skill8 from "../assets/images/react.svg";
+import skill9 from "../assets/images/ableton.svg";
+import skill10 from "../assets/images/nuendo.svg";
+import skill11 from "../assets/images/wwise.svg";
+import skill12 from "../assets/images/fmod.svg";
+import skill13 from "../assets/images/metaquest2.svg";
+import skill14 from "../assets/images/maya.svg";
 import colorSharp from "../assets/images/colorSharp.jpg";
 
 export const Skills = () => {
@@ -39,7 +45,7 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>Skills</h2>
+                            <h2>I.T. Skills</h2>
                             <p>
                                 I have used a variety of diffrent technologies throught my education and within my spare time. I am always looking to learn new skills and improve on my current skillset.
                             </p>
@@ -51,6 +57,10 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={skill2} alt="Unity"></img>
                                     <h5>Unity</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill13} alt="VR"></img>
+                                    <h5>Quest 2 VR headset</h5>
                                 </div>
                                 <div className="item">
                                     <img src={skill3} alt="git"></img>
@@ -76,7 +86,40 @@ export const Skills = () => {
                                     <img src={skill8} alt="react"></img>
                                     <h5>and now... react</h5>
                                 </div>
-
+                            </Carousel>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="skill-bx">
+                            <h2>Other Skills</h2>
+                            <p>
+                            
+                            </p>
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                <div className="item">
+                                    <img src={skill9} alt="Ableton"></img>
+                                    <h5>Ableton</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill10} alt="cubase"></img>
+                                    <h5>Cubase/Nuendo</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill11} alt="wwise"></img>
+                                    <h5>Wwise</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill12} alt="fmod"></img>
+                                    <h5>Fmod</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill14} alt="maya"></img>
+                                    <h5>Maya</h5>
+                                </div>
                             </Carousel>
                         </div>
                     </Col>
