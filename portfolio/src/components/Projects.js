@@ -1,5 +1,5 @@
 import Container from'react-bootstrap/Container';
-import React, { useState } from 'react';
+import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
@@ -26,21 +26,38 @@ export const Projects = () => {
             >
 
                 <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
+                    <Modal.Title id="contained-modal-title-vcenter black">
                         {data.title}
                     </Modal.Title>
                 </Modal.Header>
-                    <ModalBody>
-                        <p>tldr: {data.tldr} </p>
-                        <p>Full description: {data.description} </p>
-                        <p> {data.AllMedia} </p>
-                        <p>technologies: {data.technologies} </p>
+                    <ModalBody className="CardContents">
+                        <h6>tldr:</h6>
+                        <p> {data.tldr} </p>
+                        <h6>Full description:</h6>
+                        <p>{data.description} </p>
+                        <h6>Images</h6>
+                        
                         
                     </ModalBody>
-                
+                    {testLink(data)}
+
+                    <Modal.Footer>
+                        <div>Technologies Used: </div>
+                        <p style={{ fontSize: "1rem" , marginRight: 'auto'}}>{data.technologies}</p>
+                        <Button onClick={() => setModalShow(false)}>Close</Button>
+                    </Modal.Footer>
             </Modal>
         )
     }
+
+    function testLink(data){
+        if(data.link !== null && data.link !== ""){
+            return(
+                <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">{data.link}</a>
+            )
+        }
+    }
+
 
     const mapped = Portfolio.map((item, index) => {
         return (
@@ -53,6 +70,7 @@ export const Projects = () => {
                     description: item.description,
                     AllMedia: item.AllMedia,
                     technologies: item.technologies,
+                    link: item.link
                 })
                 setModalShow(true)
             }}
@@ -65,6 +83,7 @@ export const Projects = () => {
 
     return(
         <section className="projects" id="projects">
+            <div className="projectsContainer" >
             <h2>Projects</h2>
             <p>Here are some projects I have worked on.</p>
             <Container fluid="lg" style={{padding: '2rem 0'}}>
@@ -72,6 +91,7 @@ export const Projects = () => {
                     {mapped}
                 </Row>
             </Container>
+            </div>
         </section>
 
     )
