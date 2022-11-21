@@ -335,9 +335,29 @@ txt-rotate > .wrap{
   z-index: -4;
 }
 
+/* Projects css  */
+.projects{
+  margin-top: -60px;
+  padding: 260px 0 100px 0;
+  background: url(assets/images/bgimg_projects.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.projects .col{
+  z-index: 1;
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  min-width: 75%;
+}
 
+.projects h2{
 
+}
+/* Contact Form CSS */
 .contact {
   background-color: #121212 !important;
   padding: 60px 0 200px 0;
