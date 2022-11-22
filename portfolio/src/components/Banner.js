@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {Container, Row, Col} from'react-bootstrap';
-import {ArrowRightCircle} from "react-bootstrap-icons";
+// import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/images/header-img.svg";
 
 export const Banner = () => {
@@ -53,8 +53,11 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>Hi, I'm Dylan, </h1>
                         <h1><span className="wrap">{text}</span></h1>
-                        <p>I am a graduate of Murdoch University. I majored in Games Software Design and Production and Sound. </p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                        <p>I am from Perth, Australia and am currently studying at Murdoch University. I am enrolled in a Bachelor of Creative Media, majoring in Games Software Design and Production and Sound (expected finish - Semester 2, 2022). As such, I have been able to dabble in a mix of IT related projects, mainly programming and software design, as well as a mix of creative projects, such as sound design.</p> 
+                        <p>While I don't play any contemporary instruments I get a kick out of messing around with digital synthesizers and effects.</p>
+                        {/* (set to finish my studies Nov 2022 and get my results by 12th Dec 2022) */}
+                        {/* <button className="connectBtnSm"onClick={() => console.log('connect')}>
+                            Let's Connect <ArrowRightCircle size={25}></ArrowRightCircle></button> */}
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="headerimg"></img>

@@ -231,7 +231,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   min-height: 65px;
 }
 
-
+.col-xl-7 {
+  background-color: #121212;
+  border-radius: 64px;
+}
 
 .banner p{
   color: #fff;
@@ -251,6 +254,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   background-color: transparent;
   border: none;
+}
+
+.banner .connectBtnSm {
+  padding : 0 0 25px 0;
 }
 
 .banner button svg{
@@ -335,9 +342,114 @@ txt-rotate > .wrap{
   z-index: -4;
 }
 
+/* Projects css  */
+.projects{
+  margin: -60px 0 0 0;
+  padding: 100px 60px 100px 60px;
+  background: url(assets/images/bgimg_projects.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.CardContents h6{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 0 0 0;
+}
 
+.projects p{
+  color: #fff;
+  font-size: 18px;
+  /* letter-spacing: 0.8px; */
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
 
+.projects h2{
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+.projectsContainer{
+  background: #151515;
+  padding: 100px 0 100px 0;
+  min-width: 90%;
+  border-radius: 64px;
+  margin: 0 auto;
+}
+
+.cardImage:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.modal-content p, .modal-footer div{
+  color: black;
+  font-size: 18px;
+  line-height: 1em;
+  margin: 14px 0 15px 0;
+}
+
+.modal-header{
+  color: black;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+}
+
+.clickInfo {
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: var(--font-color);
+  display: none;
+}
+
+.cardImage{
+  width: 100%;
+  height: 340px;
+}
+
+.cardImage:hover + .clickInfo {
+  display: block;
+}
+
+.modal-backdrop.show {
+  opacity: .1 !important;
+}
+
+#portfolio_model_link {
+  padding: 0 0 1rem 1rem
+}
+
+#portfolio_model_link:link {
+  text-decoration: none;
+}
+
+#cardContainer{
+  width: 50%;
+  padding: 0;
+  border: none;
+}
+
+#cardContainer.card{
+  padding: 0;
+  margin: 0;
+  overflow: none;
+}
+
+@media only screen and (max-width: 600px){
+  #cardContainer {
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    border: none;
+  }
+}
+/* Contact Form CSS */
 .contact {
   background-color: #121212 !important;
   padding: 60px 0 200px 0;
@@ -407,6 +519,10 @@ txt-rotate > .wrap{
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.Contact_P{
+  text-align: center;
 }
 
 

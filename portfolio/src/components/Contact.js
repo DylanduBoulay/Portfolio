@@ -6,7 +6,6 @@ import emailjs from '@emailjs/browser';
 export const Contact = () => {
     const [buttonText, setButtonText] = useState('Send');
     const [status, setStatus] = useState({});
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -36,6 +35,7 @@ export const Contact = () => {
                     </Col>
                     <Col m6={6}>
                         <h2>Contact me</h2>
+                        <p className="Contact_P" >Feel free to contact me below.</p>
                         <form ref={form} onSubmit={sendEmail}>
                             <Col size={12} sm={10} className="px-1">
                                 <input type="text" placeholder="name" name="user_name" required></input>
