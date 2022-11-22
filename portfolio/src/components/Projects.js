@@ -31,15 +31,16 @@ export const Projects = () => {
                     </Modal.Title>
                 </Modal.Header>
                     <ModalBody className="CardContents">
-                        <h6>tldr:</h6>
+                        <h6>TLDR:</h6>
                         <p> {data.tldr} </p>
                         <h6>Full description:</h6>
                         <p>{data.description} </p>
-                        <h6>Images</h6>
-                        
-                        
+                        <h6>Images: </h6>
+                        <Image src={data.image} style={{width: '200px'}}></Image>
+                        <h6>Link:</h6>
+                        {testLink(data)}
                     </ModalBody>
-                    {testLink(data)}
+                    
 
                     <Modal.Footer>
                         <div>Technologies Used: </div>
@@ -50,10 +51,12 @@ export const Projects = () => {
         )
     }
 
+
     function testLink(data){
         if(data.link !== null && data.link !== ""){
             return(
                 <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">{data.link}</a>
+                
             )
         }
     }
@@ -86,7 +89,7 @@ export const Projects = () => {
             <div className="projectsContainer" >
             <h2>Projects</h2>
             <p>Here are some projects I have worked on.</p>
-            <Container fluid="lg" style={{padding: '2rem 0'}}>
+            <Container fluid="lg" style={{padding: '2rem -25px'}}>
                 <Row>
                     {mapped}
                 </Row>

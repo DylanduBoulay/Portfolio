@@ -16,15 +16,15 @@ const PortfolioData = [
     {
         image: img1,
         title: "IT Professional Project",
-        tldr: "A team based project to create a project for our client/s. With assistance from our supervisor",
+        tldr: "A team based, VR Boxing (+ Virtuix Omniwalker), project for our clients, with guidance of our supervisor. ",
         description: "Omniwalker Project: Designed to rehabillitate Parkinsons patients by using a VR headset (Quest 2) to stimulate arm movement using a virtual environment and incorporate social interaction." 
-        + "The clients problem was that: The most enjoyment between the players came from interacting with each other, even if the game was single player. As an extension on the Neuromender project (only single player games) we were tasked with incorporating social interaction into the boxing game."
-        + " To fulfil this criteria we were requested to incorportate multiplayer. We explored some of the technologies available, we stared with Mirror, but ultimately settled on Photon."
+        + "The clients problem was that: The most enjoyment between the players came from interacting with each other, even if the game was single player. As an extension on the Neuromender project (Neuromender consisted of only single player games, using the Kinect) we were tasked with incorporating social interaction into game."
+        + " We had to make a boxing game and to meet the criteria we were requested to add multiplayer. We explored some of the technologies available, we stared with Mirror, but ultimately settled on Photon."
         + " In conjunction with the multiplayer we were tasked with creating a lobby system, so that players could join and leave the game at will."
-        + '\n' +" Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
-        + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface to specify the game parameters for the player." ,
+        + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
+        + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player." ,
         AllMedia: [img1, img2],
-        technologies: " Unity, C#, Quest 2 VR headset, Photon",
+        technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
         link: "",
     },
     {
@@ -33,7 +33,7 @@ const PortfolioData = [
         tldr: "",
         description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do.",
         AllMedia: [],
-        technologies: " C#, GMaps API, LINQ",
+        technologies: " C#, GMaps API, LINQ, XML/SOAP",
         link: "",
     },
     {
@@ -52,7 +52,7 @@ const PortfolioData = [
         tldr: "A simple portfolio website using basic html, css and javascript.",
         description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section.", 
         AllMedia: [],
-        technologies: " HTML, CSS, Javascript, UNIX for file transfer",
+        technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
         link: "",
     },
     {
@@ -61,7 +61,7 @@ const PortfolioData = [
         tldr: "A portfolio website using react, bootstrap and react-bootstrap.",
         description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section.",
         AllMedia: [],
-        technologies: " React, Bootstrap, React-Bootstrap, Javascript, Emailjs, html, css, Javascript",
+        technologies: " React, Bootstrap, React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github for Version Control",
         link: "",
     },
     {

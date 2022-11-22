@@ -344,18 +344,19 @@ txt-rotate > .wrap{
 
 /* Projects css  */
 .projects{
-  margin-top: -60px;
-  padding: 100px 0 100px 0;
+  margin: -60px 0 0 0;
+  padding: 100px 60px 100px 60px;
   background: url(assets/images/bgimg_projects.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
-.cardContents h6{
-  color: #fff;
+
+.CardContents h6{
+  color: black;
   font-size: 20px;
   font-weight: 600;
+  padding: 20px 0 0 0;
 }
 
 .projects p{
@@ -377,8 +378,8 @@ txt-rotate > .wrap{
   background: #151515;
   padding: 100px 0 100px 0;
   min-width: 90%;
-  margin: 60px 50px;
   border-radius: 64px;
+  margin: 0 auto;
 }
 
 .cardImage:hover {
@@ -410,7 +411,7 @@ txt-rotate > .wrap{
 
 .cardImage{
   width: 100%;
-  height: 100%;
+  height: 340px;
 }
 
 .cardImage:hover + .clickInfo {
@@ -438,7 +439,7 @@ txt-rotate > .wrap{
 #cardContainer.card{
   padding: 0;
   margin: 0;
-  overflow: auto;
+  overflow: none;
 }
 
 @media only screen and (max-width: 600px){
@@ -518,6 +519,10 @@ txt-rotate > .wrap{
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.Contact_P{
+  text-align: center;
 }
 
 
