@@ -37,7 +37,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
-            {/* <img src={logo}></img> */}Dylnanz
+            {/* <img src={logo}></img> */}Dylandb - Portfolio
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
@@ -53,8 +53,8 @@ export const NavBar = () => {
 
         <span className="navbar-text">
             <div className="social-icon">
-                <a href="https://au.linkedin.com/in/dylan-du-boulay-193828196"><img src={navIcon1} alt=""/></a>
-                <a href="https://github.com/DylanduBoulay"><img src={navIcon2} alt=""/></a>
+                <a href="https://au.linkedin.com/in/dylan-du-boulay-193828196"  target={'_blank'} rel="noreferrer"><img src={navIcon1} alt=""/></a>
+                <a href="https://github.com/DylanduBoulay" target={'_blank'} rel="noreferrer"><img src={navIcon2} alt=""/></a>
                 {/* <a href="#"><img src={navIcon3} alt=""/></a> */}
 
             </div>

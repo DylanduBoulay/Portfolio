@@ -22,16 +22,16 @@ const PortfolioData = [
         + " We had to make a boxing game and to meet the criteria we were requested to add multiplayer. We explored some of the technologies available, we stared with Mirror, but ultimately settled on Photon."
         + " In conjunction with the multiplayer we were tasked with creating a lobby system, so that players could join and leave the game at will."
         + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
-        + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player." ,
+        + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player. The link below will have some footage and some more details about the project." ,
         AllMedia: [img1, img2],
         technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
-        link: "",
+        link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
     },
     {
         image: img4,
         title: "Dementia Project/App",
-        tldr: "",
-        description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do.",
+        tldr: "A program designed to store and retrieve information input from the user on an interactive map to assists with the users memory (target is people with dementia).",
+        description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do. Events would be read and written to an XML file where the markers read are plotted on the map at startup. The user is able to interact with the map, much like google maps as it is using the same API. When they click on a marker, the information stored to that marker is displayed in the right-most tab.",
         AllMedia: [],
         technologies: " C#, GMaps API, LINQ, XML/SOAP",
         link: "",
@@ -39,7 +39,7 @@ const PortfolioData = [
     {
         image: img3,
         title: "Dementia Project - Extension",
-        tldr: "A project designed to help people with dementia to remember things, storing helpers in a database and linking them with the user. As well as API interaction with a social media platform to help the user stay connected with their helper and circle of people.",
+        tldr: "A project designed to help people with dementia to remember things, storing, updating, searching and removing helpers from a database and linking them with the user. As well as API interaction with a social media platform to help the user stay connected with their helper and circle of people.",
         description: "The solution was to create a system that would help them remember things, and also help them stay connected with their circle of people. The system would be a mobile app that would allow the user to create, remove or edit their helpers, and link them with the user account. The app would also connect with the users Twitter Account to allow further interaction",
         AllMedia: [],
         technologies: " ASP.net, C#, CSHTML, CSS, SQL, Twitter APIS, LINQ, XML/SOAP",
@@ -50,7 +50,7 @@ const PortfolioData = [
         image: img5,
         title: "Portfolio Website v1",
         tldr: "A simple portfolio website using basic html, css and javascript.",
-        description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section.", 
+        description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
         AllMedia: [],
         technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
         link: "",
@@ -59,7 +59,7 @@ const PortfolioData = [
         image: img2,
         title: "Portfolio Website v2 (this website)",
         tldr: "A portfolio website using react, bootstrap and react-bootstrap.",
-        description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section. I wanted to create more animated website compared to V1 and took liberty in exploring different libraries/frameworks to handle what I wanted. I settled on React and searched the React libraries and watched a few tutorials. While I am pleased with the current result, I want to dive further into what React can really do.",
+        description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section. I wanted to create more animated website compared to V1 and took liberty in exploring different libraries/frameworks to handle what I wanted. I settled on React and searched the React libraries and watched a few tutorials. While I am pleased with the current result, I want to dive further into what React can really do. I also made the background.",
         AllMedia: [],
         technologies: " React, Bootstrap, React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github",
         link: "",
@@ -68,7 +68,7 @@ const PortfolioData = [
         image: img6,
         title: "3D Model - Simple objects",
         tldr: "Simple props made in Maya. ",
-        description: "A collection of simple 3D models, a cask, a crate, an oil drum and a hammer. Each prop was textured using Adobe Photoshop to create the Normal, diffuse and roughness maps.",
+        description: "A collection of simple 3D models, a cask, a crate, an oil drum and a hammer. Each prop was textured using Adobe Photoshop to create the Normal, diffuse and roughness maps. Each object had to be UV unwrapped and the textures were applied using the UV maps.",
         AllMedia: [],
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
@@ -99,6 +99,15 @@ const PortfolioData = [
         AllMedia: [],
         technologies: " GZDoom, Ultimate Doom Builder, Slade 3",
         link: "https://www.doomworld.com/forum/topic/132070-doom-map-uni-project-playtesters-wanted/",
+    },
+    {
+        image: img10,
+        title: "Online store Page (incomplete)",
+        tldr: "A single page application of a fake store page made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend.",
+        description: "A store page for a company that sells a variety of products. The page is made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend. The page is a single page application that uses AJAX to communicate with the database and retrieve the relevant information, it has login functionality (although it was never completely working to the acceptable standard), search functionalty and browsing. It does not have a cart or the mobile/cordova interface that was requested due to a lack of time mismanagement and hiccups in the project. This was done as a collaborative project from my uni class.",
+        AllMedia: [],
+        technologies: " HTML, CSS, Javascript, php, AJAX, SQL, Github",
+        link: "",
     }
 ]
 

@@ -37,7 +37,7 @@ export const Projects = () => {
                         <p>{data.description} </p>
                         <h6>Images: </h6>
                         <Image src={data.image} style={{width: '200px'}}></Image>
-                        <h6>Link:</h6>
+                        
                         {testLink(data)}
                     </ModalBody>
                     
@@ -55,8 +55,9 @@ export const Projects = () => {
     function testLink(data){
         if(data.link !== null && data.link !== ""){
             return(
-                <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">{data.link}</a>
-                
+                <h6>Link:
+                <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">More info</a>
+                </h6>
             )
         }
     }

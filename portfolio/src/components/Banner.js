@@ -6,7 +6,7 @@ import headerImg from "../assets/images/header-img.svg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["software developer", "web developer", "sound designer", "nerd"];
+    const toRotate = ["Software Developer", "Programmer","Web Developer", "Sound Designer", "Nerd"];
     const [text,setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -54,13 +54,13 @@ export const Banner = () => {
                         <h1>Hi, I'm Dylan, </h1>
                         <h1><span className="wrap">{text}</span></h1>
                         <p>I am from Perth, Australia and am currently studying at Murdoch University. I am enrolled in a Bachelor of Creative Media, majoring in Games Software Design and Production and Sound (expected finish - end Semester 2, 2022). As such, I have been able to dabble in a mix of IT related projects, mainly programming and software design, as well as a mix of creative projects, such as sound design.</p> 
-                        <p>I spend my free time learning things I think are useful to me. Some if this will be IT related, such as this website, othertimes I am buried in Ableton. While I don't play any contemporary instruments I get a kick out of messing around with digital synthesizers and effects. I am eager to learn more and build on my skillset to expand and explore new opportunities.</p>
+                        <p>I spend my free time learning things I think are useful to me. Some if this will be IT related, otherwise I am buried audio programs like Ableton. While I don't play any contemporary instruments I get a kick out of messing around with digital synthesizers and effects. I am eager to learn more and build on my skillset to expand and explore new opportunities.</p>
                         {/* (set to finish my studies Nov 2022 and get my results by 12th Dec 2022) */}
                         {/* <button className="connectBtnSm"onClick={() => console.log('connect')}>
                             Let's Connect <ArrowRightCircle size={25}></ArrowRightCircle></button> */}
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        {/* <img src={headerImg} alt="headerimg"></img> */}
+                        {/* <img src={headerImg} alt="headerimg"></img>  INSERT PICURE HERE BRUH.mp3 */}
                     </Col>
                 </Row>
             </Container>
