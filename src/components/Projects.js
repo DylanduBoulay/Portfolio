@@ -17,6 +17,7 @@ export const Projects = () => {
 
     function createModal(data) {
         return(
+            <div className='modal-dialogue' role={document}>
             <Modal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
@@ -30,7 +31,7 @@ export const Projects = () => {
                         {data.title}
                     </Modal.Title>
                 </Modal.Header>
-                    <ModalBody className="CardContents">
+                    <ModalBody className="modal-body clearfix">
                         <h6>TLDR:</h6>
                         <p> {data.tldr} </p>
                         <h6>Full description:</h6>
@@ -42,12 +43,13 @@ export const Projects = () => {
                     </ModalBody>
                     
 
-                    <Modal.Footer>
+                    <Modal.Footer className="modal-footer">
                         <div>Technologies Used: </div>
                         <p style={{ fontSize: "1rem" , marginRight: 'auto'}}>{data.technologies}</p>
                         <Button onClick={() => setModalShow(false)}>Close</Button>
                     </Modal.Footer>
             </Modal>
+            </div>
         )
     }
 
