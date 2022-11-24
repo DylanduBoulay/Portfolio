@@ -31,7 +31,7 @@ export const Projects = () => {
                         {data.title}
                     </Modal.Title>
                 </Modal.Header>
-                    <ModalBody className="modal-body clearfix">
+                    <ModalBody className="CardContents">
                         <h6>TLDR:</h6>
                         <p> {data.tldr} </p>
                         <h6>Full description:</h6>
