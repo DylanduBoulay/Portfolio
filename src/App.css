@@ -390,11 +390,17 @@ txt-rotate > .wrap{
   filter: brightness(50%);
 }
 
-.modal-content p, .modal-footer div{
+.modal-content p{
   color: black;
   font-size: 18px;
   line-height: 1em;
   margin: 14px 0 15px 0;
+}
+
+.modal-footer div{
+  color: black;
+  font-size: 18px;
+  line-height: 1em;
 }
 
 .modal {
@@ -406,11 +412,20 @@ div.fade.modal.show{
   background-color: transparent;
 }
 
-.modal-header{
+div.modal-header{
   color: black;
   font-size: 24px;
   letter-spacing: 0.8px;
-  padding: 200px 0 0 0;
+  
+  display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: var(--bs-modal-header-padding); */
+    border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+    padding: 60px 16px 16px 16px;
 }
 
 .modal.show .modal-dialog {
