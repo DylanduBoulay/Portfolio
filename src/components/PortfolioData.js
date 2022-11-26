@@ -61,7 +61,7 @@ const PortfolioData = [
         tldr: "A portfolio website using react, bootstrap and react-bootstrap.",
         description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section. I wanted to create more animated website compared to V1 and took liberty in exploring different libraries/frameworks to handle what I wanted. I settled on React and searched the React libraries and watched a few tutorials. While I am pleased with the current result, I want to dive further into what React can really do. I also made the background.",
         AllMedia: [],
-        technologies: " React, Bootstrap, React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github",
+        technologies: " React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github",
         link: "",
     },
     {
