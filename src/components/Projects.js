@@ -59,6 +59,7 @@ export const Projects = () => {
                             hideModalContentWhileAnimating={true}
                             backdropTransitionOutTiming={0}
                             useNativeDriver={true}
+                            animationIn="fadeIn" animationOut="fadeOut"
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="contained-modal-title-vcenter black">
