@@ -1,147 +1,114 @@
-import Container from'react-bootstrap/Container';
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
-// import img1 from '../assets/images/img1.jpg';
-// import img2 from '../assets/images/img2.jpg';
-import Portfolio from './PortfolioData'
-import { ModalBody } from 'react-bootstrap';
-
-import { useState } from 'react';
-
+import Portfolio from './PortfolioData';
 
 export const Projects = () => {
-    const [modalShow, setModalShow] = React.useState(false);
-    const [tempData, setTempData] = React.useState({});
+  const [modalShow, setModalShow] = useState(false);
+  const [tempData, setTempData] = useState({});
 
-    const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
-    const toggleNestedModal = () => {
-        setIsNestedModalOpen(!isNestedModalOpen);
-      };
+  const toggleModal = () => {
+    setModalShow(!modalShow);
+  };
 
-    function createModal(data) {
-        return(
-            <div className='modal-dialogue no-anime' role={document} backdropTransitionOutTiming={0} hideModalContentWhileAnimating={true}>
-            <Modal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-                useNativeDriver={true}
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter black">
-                        {data.title}
-                    </Modal.Title>
-                </Modal.Header>
-                    <ModalBody className="CardContents">
-                        <h6>TLDR:</h6>
-                        <p> {data.tldr} </p>
-                        <h6>Full description:</h6>
-                        <p>{data.description} </p>
-                        <h6>Images: </h6>
-                        
-                        <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>                      
-                        {/* <h6>Media: </h6>
-                        <div className="media-container">
-                            {data.AllMedia.map((item, index) => {
-                                return(
-                                    <div key={index} className="media-item">
-                                        <Image src={item} style={{width: '200px'}} className="modal-image"></Image>
-                                    </div>
-                                )
-                            })}
-                        </div> */}
+  function createModal() {
+    return (
+      <div className='modal-dialogue no-anime' role={document} backdropTransitionOutTiming={0} hideModalContentWhileAnimating={true}>
+        <Modal
+          show={modalShow}
+          onHide={toggleModal}
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          useNativeDriver={true}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-vcenter black">
+              {tempData.title}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="CardContents">
+            <h6>TLDR:</h6>
+            <p>{tempData.tldr}</p>
+            <h6>Full description:</h6>
+            <p>{tempData.description}</p>
+            <h6>Images: </h6>
 
-                        
-                        
-                        {testLink(data)}
-                    </ModalBody>
-                    
+            <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleModal} />
+            {/* <h6>Media: </h6>
+            <div className="media-container">
+              {tempData.AllMedia.map((item, index) => {
+                return (
+                  <div key={index} className="media-item">
+                    <Image src={item} style={{ width: '200px' }} className="modal-image" />
+                  </div>
+                )
+              })}
+            </div> */}
 
-                    <Modal.Footer className="modal-footer">
-                        <div>Technologies Used: </div>
-                        <p style={{ fontSize: "1rem" , marginRight: 'auto'}}>{data.technologies}</p>
-                        <Button onClick={() => setModalShow(false)}>Close</Button>
-                    </Modal.Footer>
-            </Modal>
+            {testLink(tempData)}
+          </Modal.Body>
 
-            <Modal
-                show={isNestedModalOpen}
-                onHide={toggleNestedModal}
-                size="xl"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-                hideModalContentWhileAnimating={true}
-                className='nested-modal thetop'
-                animationType="none"
-                transparent={true}
-                        >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter black">
-                        {data.title}
-                    </Modal.Title>
-                </Modal.Header>
-                <ModalBody className="CardContents">
-                    <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
-                </ModalBody>
-            </Modal>
-
-            </div>
-        )
-    }
-
-
-    function testLink(data){
-        if(data.link !== null && data.link !== ""){
-            return(
-                <h6>Link:
-                <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">More info</a>
-                </h6>
-            )
-        }
-    }
-
-
-    const mapped = Portfolio.map((item, index) => {
-        return (
-            <Card key={index} id="cardContainer">
-                <Image className="cardImage" onClick={() => {
-                    setTempData({
-                    image: item.image,
-                    title: item.title,
-                    tldr: item.tldr,
-                    description: item.description,
-                    AllMedia: item.AllMedia,
-                    technologies: item.technologies,
-                    link: item.link
-                })
-                setModalShow(true)
-            }}
-            src={item.image}></Image>
-            <div className="clickInfo"> &#x1F50E;&#xFE0E;</div>
-            {createModal(tempData)}
-            </Card>
-        )
-    })
-
-    return(
-        <section className="projects" id="projects">
-            <div className="projectsContainer" >
-            <h2>Projects</h2>
-            <p>Here are some projects I have worked on.</p>
-            <Container fluid="lg" style={{padding: '2rem -25px'}}>
-                <Row>
-                    {mapped}
-                </Row>
-            </Container>
-            </div>
-        </section>
-
+          <Modal.Footer className="modal-footer">
+            <div>Technologies Used: </div>
+            <p style={{ fontSize: "1rem", marginRight: 'auto' }}>{tempData.technologies}</p>
+            <Button onClick={toggleModal}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     )
-}
+  }
+
+  function testLink(data) {
+    if (data.link !== null && data.link !== "") {
+      return (
+        <h6>Link:
+          <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">More info</a>
+        </h6>
+      )
+    }
+  }
+
+  const mapped = Portfolio.map((item, index) => {
+    return (
+      <Card key={index} id="cardContainer">
+        <Image
+          className="cardImage"
+          onClick={() => {
+            setTempData({
+              image: item.image,
+              title: item.title,
+              tldr: item.tldr,
+              description: item.description,
+              AllMedia: item.AllMedia,
+              technologies: item.technologies,
+              link: item.link
+            });
+            setModalShow(true);
+          }}
+          src={item.image}
+        />
+        <div className="clickInfo"> &#x1F50E;&#xFE0E;</div>
+      </Card>
+    );
+  });
+
+  return (
+    <section className="projects" id="projects">
+      <div className="projectsContainer">
+        <h2>Projects</h2>
+        <p>Here are some projects I have worked on.</p>
+        <Container fluid="lg" style={{ padding: '2rem -25px' }}>
+          <Row>{mapped}</Row>
+        </Container>
+      </div>
+      {createModal()}
+    </section>
+  );
+};
+
