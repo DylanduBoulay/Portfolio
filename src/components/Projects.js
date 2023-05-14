@@ -33,9 +33,6 @@ export const Projects = () => {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                
-
-
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter black">
                         {data.title}
@@ -50,14 +47,14 @@ export const Projects = () => {
                         
                         <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
 
-                        {isNestedModalOpen && (
-                        <Modal
-                            title="Nested Modal"
-                            description="This is a nested modal."
-                            technologies="React, CSS"
-                            imagePath="nested_modal_image.jpg"
-                        />
-                        )}
+                        <Modal isOpen={isNestedModalOpen} toggle={toggleNestedModal}>
+                            <ModalBody>
+                                <Image src={data.image} style={{width: '100%'}}></Image>
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button color="primary" onClick={toggleNestedModal}>Close</Button>{' '}
+                            </ModalFooter>
+                        </Modal>
                         
                         {testLink(data)}
                     </ModalBody>
