@@ -91,9 +91,9 @@ export const Projects = () => {
                         {tempData.title}
                     </Modal.Title>
                 </Modal.Header>
-                <ModalBody className="CardContents">
+                <Modal.Body className="CardContents">
                     <Image src={tempData.image} style={{width: '100%'}} className="modal-image"></Image>
-                </ModalBody>
+                </Modal.Body>
             </Modal>
 
       </div>
