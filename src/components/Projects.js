@@ -16,10 +16,6 @@ export const Projects = () => {
     setModalShow(!modalShow);
   };
 
-  const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
-  const toggleNestedModal = () => {
-      setIsNestedModalOpen(!isNestedModalOpen);
-    };
 
   function createModal() {
     return (
@@ -44,26 +40,19 @@ export const Projects = () => {
             <p>{tempData.description}</p>
             <h6>Images: </h6>
 
-            {/* <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} /> */}
-
             {tempData.AllMedia && tempData.AllMedia.length !== 0 ? (
                 tempData.AllMedia.map((image, index) => (
-                    <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal}/>
+                    <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" onClick={() => {
+                        setTempData({
+                          ...tempData,
+                          image: image
+                        });
+                        toggleModal();
+                      }}/>
                 ))
                 ) : (
                 <p>No more images available.</p>
             )}
-
-            {/* <h6>Media: </h6>
-            <div className="media-container">
-              {tempData.AllMedia.map((item, index) => {
-                return (
-                  <div key={index} className="media-item">
-                    <Image src={item} style={{ width: '200px' }} className="modal-image" />
-                  </div>
-                )
-              })}
-            </div> */}
 
             {testLink(tempData)}
           </Modal.Body>
