@@ -11,9 +11,18 @@ import Button from 'react-bootstrap/Button';
 import Portfolio from './PortfolioData'
 import { ModalBody } from 'react-bootstrap';
 
+import React, { useState } from 'react';
+
+
 export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [tempData, setTempData] = React.useState({});
+    const Modal = () => {
+        const [isFullscreen, setIsFullscreen] = useState(false);
+      
+        const toggleFullscreen = () => {
+          setIsFullscreen(!isFullscreen);
+        };
 
     function createModal(data) {
         return(
