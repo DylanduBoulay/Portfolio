@@ -44,11 +44,11 @@ export const Projects = () => {
             <p>{tempData.description}</p>
             <h6>Images: </h6>
 
-            <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} />
+            {/* <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} /> */}
 
             {tempData.AllMedia && tempData.AllMedia.length !== 0 ? (
                 tempData.AllMedia.map((image, index) => (
-                    <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" />
+                    <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal}/>
                 ))
                 ) : (
                 <p>No more images available.</p>
