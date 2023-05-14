@@ -34,6 +34,7 @@ export const Projects = () => {
                 centered
                 hideModalContentWhileAnimating={true}
                 backdropTransitionOutTiming={0}
+                useNativeDriver={true}
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter black">
@@ -55,7 +56,9 @@ export const Projects = () => {
                             size="xl"
                             aria-labelledby="contained-modal-title-vcenter"
                             centered
+                            hideModalContentWhileAnimating={true}
                             backdropTransitionOutTiming={0}
+                            useNativeDriver={true}
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="contained-modal-title-vcenter black">
