@@ -16,6 +16,11 @@ export const Projects = () => {
     setModalShow(!modalShow);
   };
 
+  const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
+  const toggleNestedModal = () => {
+      setIsNestedModalOpen(!isNestedModalOpen);
+    };
+
   function createModal() {
     return (
       <div className='modal-dialogue no-anime' role={document} backdropTransitionOutTiming={0} hideModalContentWhileAnimating={true}>
@@ -39,7 +44,7 @@ export const Projects = () => {
             <p>{tempData.description}</p>
             <h6>Images: </h6>
 
-            <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleModal} />
+            <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} />
             {/* <h6>Media: </h6>
             <div className="media-container">
               {tempData.AllMedia.map((item, index) => {
@@ -60,6 +65,28 @@ export const Projects = () => {
             <Button onClick={toggleModal}>Close</Button>
           </Modal.Footer>
         </Modal>
+
+        <Modal
+                show={isNestedModalOpen}
+                onHide={toggleNestedModal}
+                size="xl"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                hideModalContentWhileAnimating={true}
+                className='nested-modal thetop'
+                animationType="none"
+                transparent={true}
+                        >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter black">
+                        {data.title}
+                    </Modal.Title>
+                </Modal.Header>
+                <ModalBody className="CardContents">
+                    <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
+                </ModalBody>
+            </Modal>
+
       </div>
     )
   }
