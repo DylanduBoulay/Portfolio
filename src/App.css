@@ -635,4 +635,7 @@ div.modal-header{
 .nested-modal, 
 .no-anime{
   transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  opacity: 1 !important;
 }
