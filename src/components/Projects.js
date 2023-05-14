@@ -50,7 +50,7 @@ export const Projects = () => {
                           ...tempData,
                           image: image
                         });
-                        toggleModal();
+                        toggleNestedModal();
                       }}/>
                 ))
                 ) : (
