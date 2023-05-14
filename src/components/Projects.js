@@ -25,15 +25,13 @@ export const Projects = () => {
 
     function createModal(data) {
         return(
-            <div className='modal-dialogue no-anime' role={document}>
+            <div className='modal-dialogue no-anime' role={document} backdropTransitionOutTiming={0} hideModalContentWhileAnimating={true}>
             <Modal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
-                hideModalContentWhileAnimating={true}
-                backdropTransitionOutTiming={0}
                 useNativeDriver={true}
             >
                 <Modal.Header closeButton>
