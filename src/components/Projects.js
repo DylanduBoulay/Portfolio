@@ -67,7 +67,7 @@ export const Projects = () => {
                                 </Modal.Title>
                             </Modal.Header>
                             <ModalBody className="CardContents">
-                                <Image src={data.image} style={{width: '100%'}} className="modal-image" onClick={toggleNestedModal}></Image>
+                                <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
                             </ModalBody>
                         </Modal>
                         {/* <h6>Media: </h6>
