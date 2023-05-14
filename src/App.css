@@ -631,3 +631,7 @@ div.modal-header{
   max-width: 65%;
   max-height: 65%;
 }
+
+.nested-modal{
+  transition: none;
+}

@@ -80,9 +80,7 @@ export const Projects = () => {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
                 hideModalContentWhileAnimating={true}
-                backdropTransitionOutTiming={0}
-                useNativeDriver={true}
-                animationIn="fadeIn" animationOut="fadeOut"
+                className='nested-modal'
                         >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter black">
