@@ -53,6 +53,7 @@ export const Projects = () => {
                             size="xl"
                             aria-labelledby="contained-modal-title-vcenter"
                             centered
+                            backdropTransitionOutTiming={0}
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="contained-modal-title-vcenter black">
