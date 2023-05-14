@@ -16,6 +16,9 @@ export const Projects = () => {
     setModalShow(!modalShow);
   };
 
+  const toggleNestedModal = () => {
+    setIsNestedModalOpen(!isNestedModalOpen);
+  };
 
   function createModal() {
     return (
