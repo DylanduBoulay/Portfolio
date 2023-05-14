@@ -17,7 +17,8 @@ import { useState } from 'react';
 export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [tempData, setTempData] = React.useState({});
-    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
     const toggleNestedModal = () => {
         setIsNestedModalOpen(!isNestedModalOpen);
       };
