@@ -33,7 +33,7 @@ const PortfolioData = [
         + " In conjunction with the multiplayer we were tasked with creating a lobby system, so that players could join and leave the game at will."
         + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
         + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player. The link below will have some footage and some more details about the project." ,
-        AllMedia: [img1, img2],
+        AllMedia: [img1],
         technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
         link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
     },
@@ -79,7 +79,7 @@ const PortfolioData = [
         title: "Portfolio Website v2 (this website)",
         tldr: "A portfolio website using react, bootstrap and react-bootstrap.",
         description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section. I wanted to create more animated website compared to V1 and took liberty in exploring different libraries/frameworks to handle what I wanted. I settled on React and searched the React libraries and watched a few tutorials. While I am pleased with the current result, I want to dive further into what React can really do. I also made the background.",
-        AllMedia: [],
+        AllMedia: [img2],
         technologies: " React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github",
         link: "",
     },
