@@ -25,7 +25,7 @@ export const Projects = () => {
 
     function createModal(data) {
         return(
-            <div className='modal-dialogue' role={document}>
+            <div className='modal-dialogue no-anime' role={document}>
             <Modal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
