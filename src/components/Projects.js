@@ -63,7 +63,7 @@ export const Projects = () => {
                                 <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
                             </ModalBody>
                         </Modal>
-                        <h6>Media: </h6>
+                        {/* <h6>Media: </h6>
                         <div className="media-container">
                             {data.AllMedia.map((item, index) => {
                                 return(
@@ -72,7 +72,7 @@ export const Projects = () => {
                                     </div>
                                 )
                             })}
-                        </div>
+                        </div> */}
 
                         
                         
