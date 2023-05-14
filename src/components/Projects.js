@@ -46,7 +46,7 @@ export const Projects = () => {
 
             <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} />
 
-            {tempData.AllMedia && Array.isArray(tempData.AllMedia) && tempData.allMedia.length > 0 ? (
+            {tempData.AllMedia && Array.isArray(tempData.AllMedia) && tempData.allMedia?.length > 0 ? (
             tempData.allMedia.map((image, index) => (
             <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" />
             ))
