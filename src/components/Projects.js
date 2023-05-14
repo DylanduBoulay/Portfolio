@@ -11,7 +11,7 @@ import Portfolio from './PortfolioData';
 export const Projects = () => {
   const [modalShow, setModalShow] = useState(false);
   const [tempData, setTempData] = useState({});
-
+  const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
   const toggleModal = () => {
     setModalShow(!modalShow);
   };
