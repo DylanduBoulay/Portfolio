@@ -45,6 +45,15 @@ export const Projects = () => {
             <h6>Images: </h6>
 
             <Image src={tempData.image} style={{ width: '200px' }} className="modal-image" onClick={toggleNestedModal} />
+
+            {tempData.allMedia.length > 0 ? (
+            tempData.allMedia.map((image, index) => (
+            <Image key={index} src={image} style={{ width: '200px' }} className="modal-image" />
+            ))
+            )   : (
+                <p>No more images available.</p>
+              )}
+
             {/* <h6>Media: </h6>
             <div className="media-container">
               {tempData.AllMedia.map((item, index) => {
@@ -66,7 +75,7 @@ export const Projects = () => {
           </Modal.Footer>
         </Modal>
 
-        <Modal
+<Modal
                 show={isNestedModalOpen}
                 onHide={toggleNestedModal}
                 size="xl"
@@ -79,11 +88,11 @@ export const Projects = () => {
                         >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter black">
-                        {data.title}
+                        {tempData.title}
                     </Modal.Title>
                 </Modal.Header>
                 <ModalBody className="CardContents">
-                    <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
+                    <Image src={tempData.image} style={{width: '100%'}} className="modal-image"></Image>
                 </ModalBody>
             </Modal>
 
