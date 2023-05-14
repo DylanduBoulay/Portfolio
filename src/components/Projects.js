@@ -79,6 +79,7 @@ export const Projects = () => {
                 centered
                 hideModalContentWhileAnimating={true}
                 className='nested-modal thetop'
+                animationType="none"
                         >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter black">
