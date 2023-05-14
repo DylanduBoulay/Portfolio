@@ -13,3 +13,6 @@ export const ProjectCard = ({index, title, description, image}) => {
         </Col>
     )
     }
+
+
+$(document).ready(function(){$(".modal-body img").click(function(){this.requestFullscreen()})});
