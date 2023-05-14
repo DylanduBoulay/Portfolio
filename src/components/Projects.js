@@ -51,9 +51,9 @@ export const Projects = () => {
                             <ModalBody>
                                 <Image src={data.image} style={{width: '100%'}}></Image>
                             </ModalBody>
-                            <ModalFooter>
+                            <Modal.Footer>
                                 <Button color="primary" onClick={toggleNestedModal}>Close</Button>{' '}
-                            </ModalFooter>
+                            </Modal.Footer>
                         </Modal>
                         
                         {testLink(data)}
