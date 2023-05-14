@@ -48,9 +48,9 @@ export const Projects = () => {
                         <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
 
                         <Modal isOpen={isNestedModalOpen} toggle={toggleNestedModal}>
-                            <ModalBody>
+                            <ModalBody className="CardContents">
                                 <Image src={data.image} style={{width: '100%'}}></Image>
-                            </ModalBody>
+                            </ModalBody >
                             <Modal.Footer>
                                 <Button color="primary" onClick={toggleNestedModal}>Close</Button>{' '}
                             </Modal.Footer>
