@@ -18,9 +18,9 @@ export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [tempData, setTempData] = React.useState({});
     const [isFullscreen, setIsFullscreen] = useState(false);
-    const toggleFullscreen = () => {
-          setIsFullscreen(!isFullscreen);
-    };
+    const toggleNestedModal = () => {
+        setIsNestedModalOpen(!isNestedModalOpen);
+      };
 
     function createModal(data) {
         return(
@@ -46,9 +46,17 @@ export const Projects = () => {
                         <h6>Full description:</h6>
                         <p>{data.description} </p>
                         <h6>Images: </h6>
-                        <div className={`modal ${isFullscreen ? 'fullscreen' : ''}`}>
-                        <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleFullscreen}></Image>
-                        </div>
+                        
+                        <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
+
+                        {isNestedModalOpen && (
+                        <Modal
+                            title="Nested Modal"
+                            description="This is a nested modal."
+                            technologies="React, CSS"
+                            imagePath="nested_modal_image.jpg"
+                        />
+                        )}
                         
                         {testLink(data)}
                     </ModalBody>
