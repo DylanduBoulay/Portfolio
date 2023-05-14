@@ -48,28 +48,7 @@ export const Projects = () => {
                         <p>{data.description} </p>
                         <h6>Images: </h6>
                         
-                        <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
-
-                        <Modal
-                            show={isNestedModalOpen}
-                            onHide={toggleNestedModal}
-                            size="xl"
-                            aria-labelledby="contained-modal-title-vcenter"
-                            centered
-                            hideModalContentWhileAnimating={true}
-                            backdropTransitionOutTiming={0}
-                            useNativeDriver={true}
-                            animationIn="fadeIn" animationOut="fadeOut"
-                        >
-                            <Modal.Header closeButton>
-                                <Modal.Title id="contained-modal-title-vcenter black">
-                                    {data.title}
-                                </Modal.Title>
-                            </Modal.Header>
-                            <ModalBody className="CardContents">
-                                <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
-                            </ModalBody>
-                        </Modal>
+                        <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>                      
                         {/* <h6>Media: </h6>
                         <div className="media-container">
                             {data.AllMedia.map((item, index) => {
@@ -93,6 +72,28 @@ export const Projects = () => {
                         <Button onClick={() => setModalShow(false)}>Close</Button>
                     </Modal.Footer>
             </Modal>
+
+            <Modal
+                show={isNestedModalOpen}
+                onHide={toggleNestedModal}
+                size="xl"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                hideModalContentWhileAnimating={true}
+                backdropTransitionOutTiming={0}
+                useNativeDriver={true}
+                animationIn="fadeIn" animationOut="fadeOut"
+                        >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter black">
+                        {data.title}
+                    </Modal.Title>
+                </Modal.Header>
+                <ModalBody className="CardContents">
+                    <Image src={data.image} style={{width: '100%'}} className="modal-image"></Image>
+                </ModalBody>
+            </Modal>
+
             </div>
         )
     }
