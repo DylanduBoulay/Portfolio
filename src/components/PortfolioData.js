@@ -9,9 +9,18 @@ import img8 from "../assets/images/projects/img8.jpg";
 import img9 from "../assets/images/projects/img9.jpg";
 import img10 from "../assets/images/projects/img10.jpg";
 import img11 from "../assets/images/projects/img11.jpg";
-
-     
-
+import img12 from "../assets/images/projects/img12.jpg";
+import img13 from "../assets/images/projects/img13.jpg";
+import img14 from "../assets/images/projects/img14.jpg";
+import img15 from "../assets/images/projects/img15.jpg";
+import img16 from "../assets/images/projects/img16.jpg";
+import img17 from "../assets/images/projects/img17.jpg";
+import img18 from "../assets/images/projects/img18.jpg";
+import img19 from "../assets/images/projects/img19.jpg";
+import img20 from "../assets/images/projects/img20.jpg";
+import img21 from "../assets/images/projects/img21.jpg";
+import img22 from "../assets/images/projects/img22.jpg";
+import img23 from "../assets/images/projects/img23.jpg";
 
 const PortfolioData = [
     {
@@ -34,7 +43,7 @@ const PortfolioData = [
         tldr: "A paper prototype for a game called High Noon, a 2D top down, turn-based shooter. This was to attempt game development from a theoretical approach with changes applied via iterative design.",
         description: "Would be better to see the Game Design Doc in the link for the full log of Rules, Playtest data, closing thoughts etc.",
         technologies: "Keeping it simple with Paper, Pen, Pencil, Ruler, Eraser, Playtesters",
-        AllMedia: [],
+        AllMedia: [img11],
         link: "https://drive.google.com/drive/folders/11E1sZpQTs1_AlNt0S3ofuEnh81CRsYAY?usp=sharing",
     },
     {
@@ -42,7 +51,7 @@ const PortfolioData = [
         title: "Dementia Project/App",
         tldr: "A program designed to store and retrieve information input from the user on an interactive map to assists with the users memory (target is people with dementia).",
         description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do. Events would be read and written to an XML file where the markers read are plotted on the map at startup. The user is able to interact with the map, much like google maps as it is using the same API. When they click on a marker, the information stored to that marker is displayed in the right-most tab.",
-        AllMedia: [],
+        AllMedia: [img4],
         technologies: " C#, GMaps API, LINQ, XML/SOAP",
         link: "",
     },
@@ -51,7 +60,7 @@ const PortfolioData = [
         title: "Dementia Project - Extension",
         tldr: "A project designed to help people with dementia to remember things, storing, updating, searching and removing helpers from a database and linking them with the user. As well as API interaction with a social media platform to help the user stay connected with their helper and circle of people.",
         description: "The solution was to create a system that would help them remember things, and also help them stay connected with their circle of people. The system would be a mobile app that would allow the user to create, remove or edit their helpers, and link them with the user account. The app would also connect with the users Twitter Account to allow further interaction",
-        AllMedia: [],
+        AllMedia: [img3],
         technologies: " ASP.net, C#, CSHTML, CSS, SQL, Twitter APIS, LINQ, XML/SOAP",
         link: "",
     },
@@ -61,7 +70,7 @@ const PortfolioData = [
         title: "Portfolio Website v1",
         tldr: "A simple portfolio website using basic html, css and javascript.",
         description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
-        AllMedia: [],
+        AllMedia: [img5],
         technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
         link: "",
     },
@@ -79,7 +88,7 @@ const PortfolioData = [
         title: "3D Model - Simple objects",
         tldr: "Simple props made in Maya. ",
         description: "A collection of simple 3D models, a cask, a crate, an oil drum and a hammer. Each prop was textured using Adobe Photoshop to create the Normal, diffuse and roughness maps. Each object had to be UV unwrapped and the textures were applied using the UV maps.",
-        AllMedia: [],
+        AllMedia: [img6,img12, img13, img14],
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
@@ -88,7 +97,7 @@ const PortfolioData = [
         title: "3D Model - Buildings",
         tldr: "A collection of buildins and Props. ",
         description: "A collection of buildings, one simple and one complex in design as well as a gattling gun and sandbags, each one is textured using a combination of simple textures or diffuse, normal and height maps.",
-        AllMedia: [],
+        AllMedia: [img7, img15,img16,img17],
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
@@ -97,7 +106,7 @@ const PortfolioData = [
         title: "3D Model - Spaceship",
         tldr: "A spaceship model made in Maya",
         description: "A spaceship made of simple and complex shapes, textured using a combination of simple textures or diffuse, normal and height maps. It was based off another design/tutorial that I found online but I wanted to make it my own so I deviated a bit.",
-        AllMedia: [],
+        AllMedia: [img8, img18, img19, img20],
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
@@ -106,7 +115,7 @@ const PortfolioData = [
         title: "Doom mod - Map",
         tldr: "A map for the game Doom, designed to be a mini-slaughter map using GZDoom specific features such as line sector portals, 3D floors and slopes. ",
         description: "A single map made for Doom. The intention of the mod was to gather playtest data from playtesters, I put my map on Doomworld for feedback and playtesting which can be found below. I was given freedom to select a game to mod for my uni class, I chose Doom as I have always loved it since I was a kid. It was super cool to not only make the map but to be able to get others to test it out as well.",
-        AllMedia: [],
+        AllMedia: [img9, img21,img22,img23],
         technologies: " GZDoom, Ultimate Doom Builder, Slade 3",
         link: "https://www.doomworld.com/forum/topic/132070-doom-map-uni-project-playtesters-wanted/",
     },
@@ -115,7 +124,7 @@ const PortfolioData = [
         title: "Online store Page (in-progress/incomplete)",
         tldr: "A single page application of a fake store page made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend.",
         description: "A store page for a company that sells a variety of products. The page is made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend. The page is a single page application that uses AJAX to communicate with the database and retrieve the relevant information, it has login functionality (although it was never completely working to the acceptable standard), search functionalty and browsing. It does not have a cart or the mobile/cordova interface that was requested due to a lack of time mismanagement and hiccups in the project. This was done as a collaborative project from my uni class.",
-        AllMedia: [],
+        AllMedia: [img10],
         technologies: " HTML, CSS, Javascript, php, AJAX, SQL, Github",
         link: "",
     }
