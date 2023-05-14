@@ -18,9 +18,9 @@ import img17 from "../assets/images/projects/img17.jpg";
 import img18 from "../assets/images/projects/img18.jpg";
 import img19 from "../assets/images/projects/img19.jpg";
 import img20 from "../assets/images/projects/img20.jpg";
-import img21 from "../assets/images/projects/img21.jpg";
-import img22 from "../assets/images/projects/img22.jpg";
-import img23 from "../assets/images/projects/img23.jpg";
+import img21 from "../assets/images/projects/img21.png";
+import img22 from "../assets/images/projects/img22.png";
+import img23 from "../assets/images/projects/img23.png";
 
 const PortfolioData = [
     {
