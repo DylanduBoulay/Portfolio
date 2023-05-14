@@ -639,3 +639,7 @@ div.modal-header{
   transform: none !important;
   opacity: 1 !important;
 }
+
+.thetop{
+  z-index: 9999 !important;
+}
