@@ -50,7 +50,7 @@ export const Projects = () => {
                         <Modal
                             show={isNestedModalOpen}
                             onHide={toggleNestedModal}
-                            size="lg"
+                            size="xl"
                             aria-labelledby="contained-modal-title-vcenter"
                             centered
                         >
