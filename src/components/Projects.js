@@ -37,7 +37,7 @@ export const Projects = () => {
                         <h6>Full description:</h6>
                         <p>{data.description} </p>
                         <h6>Images: </h6>
-                        <Image src={data.image} style={{width: '200px'}}></Image>
+                        <Image src={data.image} style={{width: '200px'}} className="modal-image"></Image>
                         
                         {testLink(data)}
                     </ModalBody>
@@ -102,3 +102,18 @@ export const Projects = () => {
 
     )
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modalImage = document.querySelector('.modal-image');
+    modalImage.addEventListener('click', function() {
+      var fullscreenImage = document.createElement('div');
+      fullscreenImage.classList.add('fullscreen-image');
+      var imageSrc = this.getAttribute('src');
+      fullscreenImage.innerHTML = '<img src="' + imageSrc + '">';
+      document.body.appendChild(fullscreenImage);
+  
+      fullscreenImage.addEventListener('click', function() {
+        document.body.removeChild(fullscreenImage);
+      });
+    });
+  });

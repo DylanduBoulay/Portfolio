@@ -8,6 +8,7 @@ import img7 from "../assets/images/projects/img7.jpg";
 import img8 from "../assets/images/projects/img8.jpg";
 import img9 from "../assets/images/projects/img9.jpg";
 import img10 from "../assets/images/projects/img10.jpg";
+import img11 from "../assets/images/projects/img11.jpg";
 
      
 
@@ -26,6 +27,14 @@ const PortfolioData = [
         AllMedia: [img1, img2],
         technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
         link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
+    },
+    {
+        image: img11,
+        title: "Paper Prototype Game - High Noon",
+        tldr: "A paper prototype for a game called High Noon, a 2D top down, turn-based shooter. This was to attempt game development from a theoretical approach with changes applied via iterative design.",
+        description: "Would be better to see the Game Design Doc in the link for the full log of Rules, Playtest data, closing thoughts etc.",
+        technologies: "Keeping it simple with Paper, Pen, Pencil, Ruler, Eraser, Playtesters",
+        link: "https://drive.google.com/drive/folders/11E1sZpQTs1_AlNt0S3ofuEnh81CRsYAY?usp=sharing",
     },
     {
         image: img4,
