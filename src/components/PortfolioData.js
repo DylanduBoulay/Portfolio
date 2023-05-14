@@ -34,6 +34,7 @@ const PortfolioData = [
         tldr: "A paper prototype for a game called High Noon, a 2D top down, turn-based shooter. This was to attempt game development from a theoretical approach with changes applied via iterative design.",
         description: "Would be better to see the Game Design Doc in the link for the full log of Rules, Playtest data, closing thoughts etc.",
         technologies: "Keeping it simple with Paper, Pen, Pencil, Ruler, Eraser, Playtesters",
+        AllMedia: [],
         link: "https://drive.google.com/drive/folders/11E1sZpQTs1_AlNt0S3ofuEnh81CRsYAY?usp=sharing",
     },
     {
