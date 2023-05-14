@@ -17,13 +17,10 @@ import { useState } from 'react';
 export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [tempData, setTempData] = React.useState({});
-
-    const Modal = () => {
-        const [isFullscreen, setIsFullscreen] = useState(false);
-      
-        const toggleFullscreen = () => {
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const toggleFullscreen = () => {
           setIsFullscreen(!isFullscreen);
-        };
+    };
 
     function createModal(data) {
         return(
@@ -117,5 +114,4 @@ export const Projects = () => {
         </section>
 
     )
-}
 }
