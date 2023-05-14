@@ -632,6 +632,7 @@ div.modal-header{
   max-height: 65%;
 }
 
-.nested-modal{
-  transition: none;
+.nested-modal, 
+.no-anime{
+  transition: none !important;
 }
