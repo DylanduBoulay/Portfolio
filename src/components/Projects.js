@@ -47,14 +47,34 @@ export const Projects = () => {
                         
                         <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
 
-                        <Modal isOpen={isNestedModalOpen} toggle={toggleNestedModal}>
+                        <Modal
+                            show={isNestedModalOpen}
+                            onHide={toggleNestedModal}
+                            size="lg"
+                            aria-labelledby="contained-modal-title-vcenter"
+                            centered
+                        >
+                            <Modal.Header closeButton>
+                                <Modal.Title id="contained-modal-title-vcenter black">
+                                    {data.title}
+                                </Modal.Title>
+                            </Modal.Header>
                             <ModalBody className="CardContents">
-                                <Image src={data.image} style={{width: '100%'}}></Image>
-                            </ModalBody >
-                            <Modal.Footer>
-                                <Button color="primary" onClick={toggleNestedModal}>Close</Button>{' '}
-                            </Modal.Footer>
+                                <Image src={data.image} style={{width: '200px'}} className="modal-image" onClick={toggleNestedModal}></Image>
+                            </ModalBody>
                         </Modal>
+                        <h6>Media: </h6>
+                        <div className="media-container">
+                            {data.AllMedia.map((item, index) => {
+                                return(
+                                    <div key={index} className="media-item">
+                                        <Image src={item} style={{width: '200px'}} className="modal-image"></Image>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                        
                         
                         {testLink(data)}
                     </ModalBody>
