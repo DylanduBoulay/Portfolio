@@ -46,7 +46,7 @@ export const Projects = () => {
                         <h6>Full description:</h6>
                         <p>{data.description} </p>
                         <h6>Images: </h6>
-                        //when the image is clicked, it will go fullscreen
+                        {/* //when the image is clicked, it will go fullscreen */}
                         <div className="modal-image" onClick={toggleFullscreen}>
                             <Image src={data.image} style={{width: '200px'}}></Image>
                         </div>
