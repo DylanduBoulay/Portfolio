@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {Container, Row, Col} from'react-bootstrap';
-import skill1 from "../assets/images/c.svg";
+import skill1 from "../assets/images/csharp.svg";
 import skill2 from "../assets/images/unity.svg";
 import skill3 from "../assets/images/git.svg";
 import skill4 from "../assets/images/html.svg";
@@ -15,6 +15,8 @@ import skill11 from "../assets/images/wwise.svg";
 import skill12 from "../assets/images/fmod.svg";
 import skill13 from "../assets/images/metaquest2.svg";
 import skill14 from "../assets/images/maya.svg";
+import skill15 from "../assets/images/cplusplus.svg";
+import skill16 from "../assets/images/c.svg";
 
 
 export const Skills = () => {
@@ -57,6 +59,14 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={skill2} alt="Unity"></img>
                                     <h5>Unity</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill15} alt="C++"></img>
+                                    <h5>C++</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill16} alt="C"></img>
+                                    <h5>C</h5>
                                 </div>
                                 <div className="item">
                                     <img src={skill13} alt="VR"></img>
