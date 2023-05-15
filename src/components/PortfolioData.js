@@ -21,6 +21,14 @@ import img20 from "../assets/images/projects/img20.jpg";
 import img21 from "../assets/images/projects/img21.png";
 import img22 from "../assets/images/projects/img22.png";
 import img23 from "../assets/images/projects/img23.png";
+import img24 from "../assets/images/projects/img24.jpg";
+import img25 from "../assets/images/projects/img25.jpg";
+import img26 from "../assets/images/projects/img26.jpg";
+import img27 from "../assets/images/projects/img27.jpg";
+import img28 from "../assets/images/projects/img28.jpg";
+import img29 from "../assets/images/projects/img29.jpg";
+import img30 from "../assets/images/projects/img30.jpg";
+import img31 from "../assets/images/projects/img31.jpg";
 
 const PortfolioData = [
     {
@@ -33,7 +41,7 @@ const PortfolioData = [
         + " In conjunction with the multiplayer we were tasked with creating a lobby system, so that players could join and leave the game at will."
         + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
         + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player. The link below will have some footage and some more details about the project." ,
-        AllMedia: [img1],
+        AllMedia: [img1, img29, img30,img31],
         technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
         link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
     },
@@ -51,7 +59,7 @@ const PortfolioData = [
         title: "Dementia Project/App",
         tldr: "A program designed to store and retrieve information input from the user on an interactive map to assists with the users memory (target is people with dementia).",
         description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do. Events would be read and written to an XML file where the markers read are plotted on the map at startup. The user is able to interact with the map, much like google maps as it is using the same API. When they click on a marker, the information stored to that marker is displayed in the right-most tab.",
-        AllMedia: [img4],
+        AllMedia: [img4, img27, img28],
         technologies: " C#, GMaps API, LINQ, XML/SOAP",
         link: "",
     },
@@ -60,7 +68,7 @@ const PortfolioData = [
         title: "Dementia Project - Extension",
         tldr: "A project designed to help people with dementia to remember things, storing, updating, searching and removing helpers from a database and linking them with the user. As well as API interaction with a social media platform to help the user stay connected with their helper and circle of people.",
         description: "The solution was to create a system that would help them remember things, and also help them stay connected with their circle of people. The system would be a mobile app that would allow the user to create, remove or edit their helpers, and link them with the user account. The app would also connect with the users Twitter Account to allow further interaction",
-        AllMedia: [img3],
+        AllMedia: [img3,img24,img25,img26],
         technologies: " ASP.net, C#, CSHTML, CSS, SQL, Twitter APIS, LINQ, XML/SOAP",
         link: "",
     },
