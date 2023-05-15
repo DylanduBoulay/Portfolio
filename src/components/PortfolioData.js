@@ -29,6 +29,10 @@ import img28 from "../assets/images/projects/img28.jpg";
 import img29 from "../assets/images/projects/img29.jpg";
 import img30 from "../assets/images/projects/img30.jpg";
 import img31 from "../assets/images/projects/img31.jpg";
+import img32 from "../assets/images/projects/img32.jpg";
+import img33 from "../assets/images/projects/img33.jpg";
+import img34 from "../assets/images/projects/img34.jpg";
+import img35 from "../assets/images/projects/img35.jpg";
 
 const PortfolioData = [
     {
@@ -42,8 +46,19 @@ const PortfolioData = [
         + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
         + " Additionally, the controllers were designed to track vector3 data + quaternion data to be streamed into a database for further analysis from the clinician. The game would be setup using the clinician web interface, also made by our group, to specify the game parameters for the player. The link below will have some footage and some more details about the project." ,
         AllMedia: [img1, img29, img30,img31],
-        technologies: " Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
+        technologies: "Unity, C#, Quest 2 VR headset, Photon, SQL, PHP, JSON, AJAX, Github",
         link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
+    },
+    {
+        image: img32,
+        title: "Narrative Driven Game Project",
+        tldr: "A narrative driven game project, with a focus on the narrative and the story telling aspect of the game using Unity. The requirement was to use the tools: YarnSpinner and Probuilder to build a simple game.",
+        description: "A narrative driven project whereby the game is driven by player choice, each choice will affect something in the backend, be it a boolean value or an increament/decrement. While the game is very limited"
+        + " in what can and can't be done, the same logic applies to most (all?) games, 'if this, then this'. The mechanics are however, very simple, with 'E' as your main tool for interaction and quests done as mainly fetch quests (with some exceptions). "
+        + "The world was to made using probuilder, which is a 3D modelling tool for Unity, and the dialogue was to be done using YarnSpinner, which is a dialogue tool for Unity. The game was to be made in 2/3 weeks among balancing my university units.",
+        AllMedia: [img35, img33, img34],
+        technologies: "Unity, C#, YarnSpinner, Probuilder, Github",
+        link: "",
     },
     {
         image: img11,
