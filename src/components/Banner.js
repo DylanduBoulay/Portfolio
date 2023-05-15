@@ -55,7 +55,7 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>Hi, I'm Dylan, </h1>
                         <h1><span className="wrap">{text}</span></h1>
-                        <p>I am from Perth, Australia and have completed my studies at Murdoch University. I graduated with a Bachelors of Creative Media, majoring in Games Software Design and Production and Sound. As such, I have been able to dabble in a mix of IT related projects, mainly programming and software design, as well as a mix of creative projects, such as sound design.</p> 
+                        <p>I am from Perth, Australia and have completed my studies at Murdoch University. I graduated with a Bachelors of Creative Media, majoring in Games Software Design and Production and Sound. As such, I have been able to dabble in a mix of IT related projects, mainly programming and software design, as well as creative projects, such as sound design.</p> 
                         <p>I spend my free time learning things I think are useful to me. If I am not stuck into something IT related, I will find myself buried in audio programs like Ableton. While I don't play any contemporary instruments I get a kick out of messing around with digital synthesizers and effects. I am eager to learn more and build on my skillset to expand and explore new opportunities.</p>
                         {/* (set to finish my studies Nov 2022 and get my results by 12th Dec 2022) */}
                         {/* <button className="connectBtnSm"onClick={() => console.log('connect')}>
