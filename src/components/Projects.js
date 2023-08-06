@@ -41,7 +41,7 @@ export const Projects = () => {
             <p>{tempData.tldr}</p>
             <h6>Full description:</h6>
             <p>{tempData.description}</p>
-            <h6>Images: </h6>
+            <h6>Images "(Click to expand)": </h6>
 
             {tempData.AllMedia && tempData.AllMedia.length !== 0 ? (
                 tempData.AllMedia.map((image, index) => (
