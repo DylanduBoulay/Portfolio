@@ -65,9 +65,6 @@ const PortfolioData = [
         technologies: "PHP, SQL, REST, AJAX, JSON",
         link: "",
     },
-
-
-
     {
         image: img32,
         title: "Narrative Driven Game Project",
@@ -80,15 +77,6 @@ const PortfolioData = [
         link: "",
     },
     {
-        image: img11,
-        title: "Paper Prototype Game - High Noon",
-        tldr: "A paper prototype for a game called High Noon, a 2D top down, turn-based shooter. This was to attempt game development from a theoretical approach with changes applied via iterative design.",
-        description: "Would be better to see the Game Design Doc in the link for the full log of Rules, Playtest data, closing thoughts etc.",
-        technologies: "Paper, Pen, Pencil, Ruler, Eraser, Dice, Brain, Gun fingers,Playtesters",
-        AllMedia: [img11],
-        link: "https://drive.google.com/drive/folders/11E1sZpQTs1_AlNt0S3ofuEnh81CRsYAY?usp=sharing",
-    },
-    {
         image: img4,
         title: "Dementia Project/App",
         tldr: "A program designed to store and retrieve information input from the user on an interactive map to assists with the users memory (target is people with dementia).",
@@ -97,6 +85,16 @@ const PortfolioData = [
         technologies: " C#, GMaps API, LINQ, XML/SOAP",
         link: "",
     },
+    {
+        image: img11,
+        title: "Paper Prototype Game - High Noon",
+        tldr: "A paper prototype for a game called High Noon, a 2D top down, turn-based shooter. This was to attempt game development from a theoretical approach with changes applied via iterative design.",
+        description: "Would be better to see the Game Design Doc in the link for the full log of Rules, Playtest data, closing thoughts etc.",
+        technologies: "Paper, Pen, Pencil, Ruler, Eraser, Dice, Brain, Gun fingers,Playtesters",
+        AllMedia: [img11],
+        link: "https://drive.google.com/drive/folders/11E1sZpQTs1_AlNt0S3ofuEnh81CRsYAY?usp=sharing",
+    },
+    
     {
         image: img3,
         title: "Dementia Project - Extension",
