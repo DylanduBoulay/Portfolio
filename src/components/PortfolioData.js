@@ -50,6 +50,21 @@ const PortfolioData = [
         link: "https://drive.google.com/drive/folders/1ssZCUmt2KIaxhARro3w2hwki9EQ5s5z3?usp=share_link",
     },
     {
+        image: img36,
+        title: "Music Streaming Service",
+        tldr: "A music streaming service, with a focus on the backend, using PHP and SQL. The requirement was to use the tools: PHP and SQL to build a simple music streaming service as a single page application.",
+        description: "A project that was to utilise PHP, SQL and REST to respond to the user interactions based on the website activity. The website was to be a single page application,"
+        + " with the user being able to search for songs, artists and albums. The user would be able to create an account, login and logout. The user would be able to add songs to their playlist, and remove songs from their playlist. "
+        + "The user would be able to view their playlist, and the songs in their playlist. The user would be able to view the songs, artists and albums in the database. The user would be able to view the songs, artists and albums in the database."
+        + "The idea was to be able to scale the website up by adding additional functionality, streaming, digital VSTs, merch, etc. but remains outside of my expertise.",
+        AllMedia: [img36, img37, im38, img39],
+        technologies: "PHP, SQL, REST, AJAX, JSON",
+        link: "",
+    },
+
+
+
+    {
         image: img32,
         title: "Narrative Driven Game Project",
         tldr: "A narrative driven game project, with a focus on the narrative and the story telling aspect of the game using Unity. The requirement was to use the tools: YarnSpinner and Probuilder to build a simple game.",
