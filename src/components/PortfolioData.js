@@ -33,6 +33,10 @@ import img32 from "../assets/images/projects/img32.jpg";
 import img33 from "../assets/images/projects/img33.jpg";
 import img34 from "../assets/images/projects/img34.jpg";
 import img35 from "../assets/images/projects/img35.jpg";
+import img36 from "../assets/images/projects/img36.jpg";
+import img37 from "../assets/images/projects/img37.jpg";
+import img38 from "../assets/images/projects/img38.jpg";
+import img39 from "../assets/images/projects/img39.jpg";
 
 const PortfolioData = [
     {
@@ -57,7 +61,7 @@ const PortfolioData = [
         + " with the user being able to search for songs, artists and albums. The user would be able to create an account, login and logout. The user would be able to add songs to their playlist, and remove songs from their playlist. "
         + "The user would be able to view their playlist, and the songs in their playlist. The user would be able to view the songs, artists and albums in the database. The user would be able to view the songs, artists and albums in the database."
         + "The idea was to be able to scale the website up by adding additional functionality, streaming, digital VSTs, merch, etc. but remains outside of my expertise.",
-        AllMedia: [img36, img37, im38, img39],
+        AllMedia: [img36, img37, img38, img39],
         technologies: "PHP, SQL, REST, AJAX, JSON",
         link: "",
     },
