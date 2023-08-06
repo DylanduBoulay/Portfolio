@@ -104,16 +104,16 @@ const PortfolioData = [
         technologies: " ASP.net, C#, CSHTML, CSS, SQL, Twitter APIS, LINQ, XML/SOAP",
         link: "",
     },
-    
     {
-        image: img5,
-        title: "Portfolio Website v1",
-        tldr: "A simple portfolio website using basic html, css and javascript.",
-        description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
-        AllMedia: [img5],
-        technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
-        link: "",
+        image: img9,
+        title: "Doom mod - Map",
+        tldr: "A map for the game Doom, designed to be a mini-slaughter map using GZDoom specific features such as line sector portals, 3D floors and slopes. ",
+        description: "A single map made for Doom. The intention of the mod was to gather playtest data from playtesters, I put my map on Doomworld for feedback and playtesting which can be found below. I was given freedom to select a game to mod for my uni class, I chose Doom as I have always loved it since I was a kid. It was super cool to not only make the map but to be able to get others to test it out as well.",
+        AllMedia: [img9, img21,img22,img23],
+        technologies: " GZDoom, Ultimate Doom Builder, Slade 3",
+        link: "https://www.doomworld.com/forum/topic/132070-doom-map-uni-project-playtesters-wanted/",
     },
+
     {
         image: img2,
         title: "Portfolio Website v2 (this website)",
@@ -121,24 +121,6 @@ const PortfolioData = [
         description: "A website designed to showcase my skills and projects. It was designed to be a single page website with a navbar that would scroll to the relevant section. I wanted to create more animated website compared to V1 and took liberty in exploring different libraries/frameworks to handle what I wanted. I settled on React and searched the React libraries and watched a few tutorials. While I am pleased with the current result, I want to dive further into what React can really do. I also made the background.",
         AllMedia: [img2],
         technologies: " React-Bootstrap, Javascript, Emailjs, html, css, Javascript, Github",
-        link: "",
-    },
-    {
-        image: img6,
-        title: "3D Model - Simple objects",
-        tldr: "Simple props made in Maya. ",
-        description: "A collection of simple 3D models, a cask, a crate, an oil drum and a hammer. Each prop was textured using Adobe Photoshop to create the Normal, diffuse and roughness maps. Each object had to be UV unwrapped and the textures were applied using the UV maps.",
-        AllMedia: [img6,img12, img13, img14],
-        technologies: " Maya 2022, Adobe Photoshop",
-        link: "",
-    },
-    {
-        image: img7 ,
-        title: "3D Model - Buildings",
-        tldr: "A collection of buildins and Props. ",
-        description: "A collection of buildings, one simple and one complex in design as well as a gattling gun and sandbags, each one is textured using a combination of simple textures or diffuse, normal and height maps.",
-        AllMedia: [img7, img15,img16,img17],
-        technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
     {
@@ -150,14 +132,25 @@ const PortfolioData = [
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
+
     {
-        image: img9,
-        title: "Doom mod - Map",
-        tldr: "A map for the game Doom, designed to be a mini-slaughter map using GZDoom specific features such as line sector portals, 3D floors and slopes. ",
-        description: "A single map made for Doom. The intention of the mod was to gather playtest data from playtesters, I put my map on Doomworld for feedback and playtesting which can be found below. I was given freedom to select a game to mod for my uni class, I chose Doom as I have always loved it since I was a kid. It was super cool to not only make the map but to be able to get others to test it out as well.",
-        AllMedia: [img9, img21,img22,img23],
-        technologies: " GZDoom, Ultimate Doom Builder, Slade 3",
-        link: "https://www.doomworld.com/forum/topic/132070-doom-map-uni-project-playtesters-wanted/",
+        image: img5,
+        title: "Portfolio Website v1",
+        tldr: "A simple portfolio website using basic html, css and javascript.",
+        description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
+        AllMedia: [img5],
+        technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
+        link: "",
+    },
+
+    {
+        image: img7 ,
+        title: "3D Model - Buildings",
+        tldr: "A collection of buildins and Props. ",
+        description: "A collection of buildings, one simple and one complex in design as well as a gattling gun and sandbags, each one is textured using a combination of simple textures or diffuse, normal and height maps.",
+        AllMedia: [img7, img15,img16,img17],
+        technologies: " Maya 2022, Adobe Photoshop",
+        link: "",
     },
     {
         image: img10,
@@ -167,7 +160,17 @@ const PortfolioData = [
         AllMedia: [img10],
         technologies: " HTML, CSS, Javascript, php, AJAX, SQL, Github",
         link: "",
-    }
+    },
+
+    {
+        image: img6,
+        title: "3D Model - Simple objects",
+        tldr: "Simple props made in Maya. ",
+        description: "A collection of simple 3D models, a cask, a crate, an oil drum and a hammer. Each prop was textured using Adobe Photoshop to create the Normal, diffuse and roughness maps. Each object had to be UV unwrapped and the textures were applied using the UV maps.",
+        AllMedia: [img6,img12, img13, img14],
+        technologies: " Maya 2022, Adobe Photoshop",
+        link: "",
+    },
 ]
 
 export default PortfolioData
