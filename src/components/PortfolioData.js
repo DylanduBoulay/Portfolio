@@ -42,9 +42,9 @@ const PortfolioData = [
     {
         image: img1,
         title: "IT Professional Project",
-        tldr: "A team based, VR Boxing (+ Virtuix Omniwalker), project for our clients, with guidance of our supervisor. ",
+        tldr: "A team based, VR Boxing (+ Virtuix Omniwalker), project for our clients, with guidance of our supervisor. SCRUM was used as the project management methodology.",
         description: "Omniwalker Project: Designed to rehabillitate Parkinsons patients by using a VR headset (Quest 2) to stimulate arm movement using a virtual environment and incorporate social interaction." 
-        + "The clients problem was that: The most enjoyment between the players came from interacting with each other, even if the game was single player. As an extension on the Neuromender project (Neuromender consisted of only single player games, using the Kinect) we were tasked with incorporating social interaction into game."
+        + "The clients problem was: The most enjoyment between the players came from interacting with each other, even if the game was single player. As an extension on the Neuromender project (Neuromender consisted of only single player games, using the Kinect) we were tasked with incorporating social interaction into game."
         + " We had to make a boxing game and to meet the criteria we were requested to add multiplayer. We explored some of the technologies available, we stared with Mirror, but ultimately settled on Photon."
         + " In conjunction with the multiplayer we were tasked with creating a lobby system, so that players could join and leave the game at will."
         + " Among the criteria was also, creating a single player mode. For this we settled on timed target practice. Throughout the gamemode, targets would popup with a corresponding letter to inform the user which hand to hit which target with."
