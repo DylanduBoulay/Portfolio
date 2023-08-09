@@ -130,7 +130,7 @@ export const Projects = () => {
     <section className="projects" id="projects">
       <div className="projectsContainer">
         <h2>Projects</h2>
-        <p>Here are some projects I have worked on.</p>
+        <p>Here are some projects I have worked on. (click to view more) </p>
         <Container fluid="lg" style={{ padding: '2rem -25px' }}>
           <Row>{mapped}</Row>
         </Container>
