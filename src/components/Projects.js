@@ -96,7 +96,7 @@ export const Projects = () => {
     if (data.link !== null && data.link !== "") {
       return (
         <h6>Link:
-          <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">More info</a>
+          <a id="portfolio_model_link" href={data.link} target="_blank" rel="noreferrer">More Information/Project Files</a>
         </h6>
       )
     }
