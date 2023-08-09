@@ -62,8 +62,8 @@ const PortfolioData = [
         + "The user would be able to view their playlist, and the songs in their playlist. The user would be able to view the songs, artists and albums in the database. The user would be able to view the songs, artists and albums in the database."
         + "The idea was to be able to scale the website up by adding additional functionality, streaming, digital VSTs, merch, etc. but remains outside of my expertise.",
         AllMedia: [img36, img37, img38, img39],
-        technologies: "XAMPP (Apashe & MySQL),PHP, REST, AJAX, JSON",
-        link: "",
+        technologies: "XAMPP (Apashe & MySQL), HTML,PHP, REST, AJAX, JSON",
+        link: "https://github.com/DylanduBoulay/MusicStreamSite",
     },
     {
         image: img32,
