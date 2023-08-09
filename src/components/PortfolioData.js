@@ -133,15 +133,15 @@ const PortfolioData = [
         link: "",
     },
 
-    {
-        image: img5,
-        title: "Portfolio Website v1",
-        tldr: "A simple portfolio website using basic html, css and javascript.",
-        description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
-        AllMedia: [img5],
-        technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
-        link: "",
-    },
+    // {
+    //     image: img5,
+    //     title: "Portfolio Website v1",
+    //     tldr: "A simple portfolio website using basic html, css and javascript.",
+    //     description: "A static website detailing who I am and what I have done/am doing. The design was to be simple as it was more of an introduction to web development and the required programming languages.", 
+    //     AllMedia: [img5],
+    //     technologies: " HTML, CSS, Javascript, UNIX for FTP and hosting",
+    //     link: "",
+    // },
 
     {
         image: img7 ,
@@ -152,15 +152,15 @@ const PortfolioData = [
         technologies: " Maya 2022, Adobe Photoshop",
         link: "",
     },
-    {
-        image: img10,
-        title: "Online store Page (in-progress/incomplete)",
-        tldr: "A single page application of a fake store page made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend.",
-        description: "A store page for a company that sells a variety of products. The page is made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend. The page is a single page application that uses AJAX to communicate with the database and retrieve the relevant information, it has login functionality (although it was never completely working to the acceptable standard), search functionalty and browsing. It does not have a cart or the mobile/cordova interface that was requested due to a lack of time mismanagement and hiccups in the project. This was done as a collaborative project from my uni class.",
-        AllMedia: [img10],
-        technologies: " HTML, CSS, Javascript, php, AJAX, SQL, Github",
-        link: "",
-    },
+    // {
+    //     image: img10,
+    //     title: "Online store Page (in-progress/incomplete)",
+    //     tldr: "A single page application of a fake store page made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend.",
+    //     description: "A store page for a company that sells a variety of products. The page is made using HTML, CSS, Javascript, php, AJAX and SQL, complete with a database-backend. The page is a single page application that uses AJAX to communicate with the database and retrieve the relevant information, it has login functionality (although it was never completely working to the acceptable standard), search functionalty and browsing. It does not have a cart or the mobile/cordova interface that was requested due to a lack of time mismanagement and hiccups in the project. This was done as a collaborative project from my uni class.",
+    //     AllMedia: [img10],
+    //     technologies: " HTML, CSS, Javascript, php, AJAX, SQL, Github",
+    //     link: "",
+    // },
 
     {
         image: img6,
