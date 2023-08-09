@@ -83,7 +83,7 @@ const PortfolioData = [
         description: "A project designed to help people with dementia to remember things. They would store information on an interactive map and place markets of relevant people or tasks they were to do. Events would be read and written to an XML file where the markers read are plotted on the map at startup. The user is able to interact with the map, much like google maps as it is using the same API. When they click on a marker, the information stored to that marker is displayed in the right-most tab.",
         AllMedia: [img4, img27, img28],
         technologies: " C#, GMaps API, LINQ, XML/SOAP",
-        link: "",
+        link: "https://github.com/DylanduBoulay/DementiaProjectV1",
     },
     {
         image: img11,
